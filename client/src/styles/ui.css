@@ -1,0 +1,314 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, Campton;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+h1.c-color1 {
+  font-size: 32px;
+  font-family: "Campton", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+h1.c-color2 {
+  font-size: 32px;
+  font-family: "Campton", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 94px;
+  padding: 0px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+section {
+  width: 100%;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.header-wrap {
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.title {
+  width: 200px;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+.c-menu-wrap ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline-start: 0;
+}
+
+.c-menu-wrap ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  padding: 24px 0px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.c-title-area {
+  margin-top: 100px;
+}
+.c-title-area h1 {
+  letter-spacing: 0.05em;
+  padding: 0 1.75rem 2rem;
+  text-transform: uppercase;
+}
+
+.c-title-line {
+  display: flex;
+  height: 0.4rem;
+  padding: 0 1.75rem;
+}
+.c-title-line div:first-of-type {
+  background-color: #464ea3;
+  flex: 1;
+}
+.c-title-line div {
+  width: 0.75rem;
+}
+.c-title-line div:last-of-type {
+  background-color: #464ea3;
+  flex: 1;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.card-wrap {
+  margin-top: 100px;
+}
+
+.card {
+  border-radius: 8px;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 340px;
+  cursor: pointer;
+}
+
+.ant-row {
+  margin-top: 24px;
+}
+
+.footer {
+  margin-top: 60px;
+  padding: 24px;
+}
+
+.footer-line {
+  height: 0.5rem;
+  position: relative;
+  background-color: #eeeeee;
+}
+
+.c-color1 {
+  color: #464ea3;
+}
+
+.ant-modal-body {
+  padding: 40px;
+}
+
+.s-modal-wrap,
+.a-loca-modal-wrap {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  padding: 40px;
+  display: none;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0 0 0 / 40%);
+}
+.s-modal-wrap .s-modal {
+  width: 100%;
+  height: 100vh;
+  max-height: 900px;
+}
+.s-modal {
+  background: #ffffff;
+  /* box-shadow: 0 20px 40px 0 rgb(0 0 0 / 20%); */
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.s-modal-inner {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+}
+.s-modal-inner.right {
+  padding: 80px;
+  position: relative;
+}
+
+.s-modal-text-wrap-top {
+  height: 40px;
+  font-weight: bold;
+  font-size: 30px;
+}
+.s-modal-logo {
+  height: 40px;
+}
+.s-modal-text-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.s-modal-text-wrap-bottom h6 {
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.s-modal-text-info {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
